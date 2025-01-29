@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Input,
   Paper,
   Table,
   TableBody,
@@ -32,6 +31,7 @@ const InputField: FC<{ name: string; label: string }> = ({ name, label }) => {
       onChange={onChange}
       value={value}
       error={isError}
+      label={label}
       helperText={isError ? error : ""}
     />
   );
